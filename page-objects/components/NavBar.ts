@@ -1,8 +1,5 @@
 import { expect, Locator, Page } from '@playwright/test'
 
-const searchtLinkLocator: string = '.data-testid="SearchIcon"'
-const shortlistLinkLocator: string = 'aria-label="Shortlist"'
-
 export class NavBar {
   readonly page: Page
   readonly searchtLink: Locator
@@ -10,8 +7,8 @@ export class NavBar {
 
   constructor(page: Page) {
     this.page = page
-    this.searchtLink = page.locator(searchtLinkLocator)
-    this.shortlistLink = page.locator(shortlistLinkLocator)
+    this.searchtLink = page.locator('aria-label="Shortlist"')
+    this.shortlistLink = page.locator('aria-label="Shortlist"')
   }
 
   async menuClick(menuName: string) {
