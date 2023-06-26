@@ -33,6 +33,6 @@ test.describe('Login Page test suite', () => {
 
     const errorMessage = page.locator('.alert__title')
     await expect(errorMessage).toContainText('Incorrect username or password')
-    await expect(errorMessage).toHaveCount(1) //Count elements
+    await expect(errorMessage).toHaveCount(1) //Count element
   })
 })
