@@ -1,7 +1,7 @@
 import { expect, Locator, Page } from '@playwright/test'
 
 const searchtLinkLocator: string = '.data-testid="SearchIcon"'
-const shortlistLinkLocator: string = 'aria-label="Shortlist"'
+const shortlistLinkLocator: string = '.aria-label="Shortlist"'
 
 export class NavBar {
   readonly page: Page
